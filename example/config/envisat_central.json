@@ -1,0 +1,26 @@
+{
+  "run": {
+    "duration_seconds": 600.0
+  },
+  "execution": {
+    "maxThreads": 1,
+    "integration": {
+      "initialStepSize": 60.0,
+      "maxNumSteps": 100
+    }
+  },
+  "model": {
+    "environment": {
+      "bodies": {
+        "Earth": {
+          "gravity": true
+        }
+      },
+      "ephemeris": [
+        "../../data/local/ephemeris/de440s.brie"
+      ],
+      "constants": "../../data/constants.json",
+      "preferSSB": true
+    }
+  }
+}

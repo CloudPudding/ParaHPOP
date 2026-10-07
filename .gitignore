@@ -1,0 +1,14 @@
+/build*/
+/output/
+/data/local/
+__pycache__/
+*.pyc
+*.o
+*.obj
+*.so
+*.dll
+*.exe
+*.a
+*.lib
+*.log
+.env

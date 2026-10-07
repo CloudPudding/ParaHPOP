@@ -1,0 +1,26 @@
+{
+  "description": "ENVISAT: first state of the paper arc, not a complete validation dataset.",
+  "frame": "Earth-centered ICRF-aligned inertial axes",
+  "epoch_definition": "TDB days since 2000-01-01T00:00:00 TDB",
+  "source_epoch_utc": "2011-01-18T00:00:26Z",
+  "targets": [
+    {
+      "id": 1,
+      "name": "ENVISAT",
+      "epoch_mjd2000_tdb": 4035.0010669489266,
+      "state_km_km_s": [
+        1014.2892756598072,
+        -982.7053054897447,
+        6995.559125293371,
+        -0.48001291992744405,
+        -7.393275969941314,
+        -0.9671690221901144
+      ],
+      "mass_kg": 7835.953,
+      "drag_area_m2": 55.64,
+      "srp_area_m2": 88.4,
+      "cd": 2.7,
+      "cr": 1.0
+    }
+  ]
+}

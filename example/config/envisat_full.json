@@ -1,0 +1,96 @@
+{
+  "run": {
+    "duration_seconds": 600.0
+  },
+  "execution": {
+    "maxThreads": 1,
+    "integration": {
+      "initialStepSize": 60.0,
+      "maxNumSteps": 100
+    }
+  },
+  "model": {
+    "environment": {
+      "bodies": {
+        "Earth": {
+          "occulting": true,
+          "flattening": 0.0033528106647474805,
+          "gravity": {
+            "shape": {
+              "body": "Earth",
+              "file": "../../data/local/gravity/ggm03c_360_sha.tab",
+              "delimiter": ",",
+              "headerLines": 0,
+              "degree": 70,
+              "order": 70
+            }
+          },
+          "atmosphere": {
+            "nrlmsise00": {
+              "spaceWeatherFile": "../../data/local/earth/SW-All.txt",
+              "coverageStartMjdUtc": 55571.0,
+              "coverageEndMjdUtc": 55594.0,
+              "hCutoff": 1000.0,
+              "densityScale": 1.0
+            }
+          }
+        },
+        "Sun": {
+          "gravity": true,
+          "radiation": true
+        },
+        "Moon": {
+          "gravity": true
+        },
+        "MercuryBarycenter": {
+          "gm": 22031.868551,
+          "gravity": true
+        },
+        "VenusBarycenter": {
+          "gm": 324858.592,
+          "gravity": true
+        },
+        "MarsBarycenter": {
+          "gm": 42828.375816,
+          "gravity": true
+        },
+        "JupiterBarycenter": {
+          "gm": 126712764.1,
+          "gravity": true
+        },
+        "SaturnBarycenter": {
+          "gm": 37940584.8418,
+          "gravity": true
+        },
+        "UranusBarycenter": {
+          "gm": 5794556.4,
+          "gravity": true
+        },
+        "NeptuneBarycenter": {
+          "gm": 6836527.10058,
+          "gravity": true
+        },
+        "PlutoBarycenter": {
+          "gm": 975.5,
+          "gravity": true
+        }
+      },
+      "ephemeris": [
+        "../../data/local/ephemeris/de440s.brie"
+      ],
+      "orientations": [
+        "../../data/local/earth/itrf_iers2000_20110110_20110202.brot2"
+      ],
+      "constants": "../../data/constants.json",
+      "preferSSB": true,
+      "earthCorrections": {
+        "model": "iers2010_fes2004",
+        "tideSystem": "zero_tide",
+        "solidEarthTides": true,
+        "oceanTides": true,
+        "relativity": true,
+        "eopFile": "../../data/local/earth/EOP-All.txt"
+      }
+    }
+  }
+}

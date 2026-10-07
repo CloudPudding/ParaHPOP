@@ -1,0 +1,35 @@
+{
+  "purpose": "Local ENVISAT example runtime data; review redistribution before publishing.",
+  "files": [
+    {
+      "path": "data/constants.json",
+      "bytes": 926,
+      "sha256": "b53a5fd1e5d5996e6e87a5703830ddf370c91573a6b77cd57a98306d45c1e885"
+    },
+    {
+      "path": "data/local/earth/EOP-All.txt",
+      "bytes": 2431620,
+      "sha256": "b26445c4319fa26b595cf0acbb75caf71b169323182ccc672973d6013d9c931d"
+    },
+    {
+      "path": "data/local/earth/itrf_iers2000_20110110_20110202.brot2",
+      "bytes": 76664,
+      "sha256": "e96610b34b9039446e5c858b73d4fe23530486cad3424e64e68aacea270a1440"
+    },
+    {
+      "path": "data/local/earth/SW-All.txt",
+      "bytes": 3298251,
+      "sha256": "71a306e806c93be844176b288964a3fc13dfbdadd5257f43b05cd203dc3ba076"
+    },
+    {
+      "path": "data/local/ephemeris/de440s.brie",
+      "bytes": 35757953,
+      "sha256": "885c998829702e323d73e9ca0a89d849b52ccfe347d4d6737ac55cac02f8a37b"
+    },
+    {
+      "path": "data/local/gravity/ggm03c_360_sha.tab",
+      "bytes": 4664542,
+      "sha256": "aa662c542c2da55d36aeb98ee806bc9403c1b9eb9977cdfc24ac5215339d3abf"
+    }
+  ]
+}
